@@ -54,12 +54,7 @@ See [ARCHITECTURE.md](ARCHITECTURE.md) for details.
    docker-compose up -d
    ```
 
-3. Start incentive API (if needed)
-   ```bash
-   java -jar services/transaction-incentive-api.jar
-   ```
-
-4. Build and run
+3. Build and run
    ```bash
    ./mvnw clean install
    ./mvnw spring-boot:run
