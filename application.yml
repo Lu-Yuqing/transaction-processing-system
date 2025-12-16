@@ -1,0 +1,19 @@
+general:
+  kafka-topic: transactions
+
+server:
+  port: 33400
+
+spring:
+  profiles:
+    active: ${SPRING_PROFILES_ACTIVE:dev}  # Default to dev profile
+  kafka:
+    bootstrap-servers: ${KAFKA_BOOTSTRAP_SERVERS:localhost:9092}
+  application:
+    name: midas-core
+
+# Default configuration (can be overridden by profile-specific configs)
+logging:
+  level:
+    root: INFO
+    com.jpmc.midascore: INFO
